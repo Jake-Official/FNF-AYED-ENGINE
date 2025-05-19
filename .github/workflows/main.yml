@@ -28,14 +28,29 @@ jobs:
         with:
           haxe-version: 4.2.5
       # Runs a set of commands using the runners shell
+      - name: Install lix
+        run: npm i lix -g
+      - name: Run lix
+        run: npx lix download
+      # clean stdgo
+      - name: Clean stdgo
+        run: npx haxe --run Run clean
+      - name: Create vendor
+        run: go mod vendor
       - name: Install Haxelib
         run: |
           haxelib setup C:/haxelib
-          haxelib install hxcpp > /dev/null --quiet
-          .\"Lib/windows-4-2-5.bat"
-        shell: cmd
-      - name: Skip SScript setup mode
-        run: echo 'oy9:showMacroty8:loopCosti25y10:includeAllfg' >> %USERPROFILE%/settings.cocoa
+          lix install haxelib:hxcpp#4.2.1
+          lix install haxelib:flixel-ui#2.4.0
+          lix install haxelib:flixel#4.11.0
+          lix install haxelib:flixel-addons#2.11.0
+          lix install haxelib:openfl#9.2.1
+          lix install haxelib:lime#8.0.0
+          lix install haxelib:hxCodec#2.5.1
+          haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
+          haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
+          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          lix list haxelib
         shell: cmd
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
@@ -44,5 +59,5 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@v4.3.4
         with:
-          name: windowsBuild
+          name: Build
           path: export/release/windows/bin
