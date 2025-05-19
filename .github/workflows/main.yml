@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: AyedEngineBuild
+name: Build
 
 # Controls when the action will run.
 on:
@@ -32,8 +32,6 @@ jobs:
         run: npm i lix -g
       - name: Run lix
         run: npx lix download
-      - name: Create vendor
-        run: go mod vendor
       - name: Install Haxelib
         run: |
           haxelib setup C:/haxelib
