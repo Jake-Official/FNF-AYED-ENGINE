@@ -30,6 +30,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install lix
         run: npm i lix -g
+      - name: Node Lix Install
+        run: npm install -g lix
       - name: Scope
         run: lix scope create
       - name: Run lix
