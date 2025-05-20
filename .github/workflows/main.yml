@@ -34,11 +34,13 @@ jobs:
         run: npm install -g lix
       - name: Scope
         run: npx lix scope create
+      - name: Scope1234
+        run: lix use haxe stable
       - name: Run lix
         run: npx lix download
       - name: Install Haxelib
         run: |
-          haxelib setup D:/haxelib
+          npx haxelib setup D:/haxelib
           lix install haxelib:lime#8.0.0
           lix install haxelib:hxcpp#4.2.1
           lix install haxelib:flixel-ui#2.4.0
