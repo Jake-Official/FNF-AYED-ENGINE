@@ -38,7 +38,7 @@ jobs:
         run: npx lix download
       - name: Install Haxelib
         run: |
-          haxelib setup C:/haxelib
+          haxelib setup D:/haxelib
           lix install haxelib:lime#8.0.0
           lix install haxelib:hxcpp#4.2.1
           lix install haxelib:flixel-ui#2.4.0
