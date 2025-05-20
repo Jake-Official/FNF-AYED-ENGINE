@@ -32,9 +32,8 @@ jobs:
         run: npm i lix -g
       - name: Node Lix Install
         run: npm install -g lix
-      - with:
-          name: Scope Load
-          path: ./.haxerc
+      - name: Scope
+        run: npx lix scope create
       - name: Run lix
         run: npx lix download
       - name: Install Haxelib
