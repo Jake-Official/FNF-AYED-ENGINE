@@ -42,7 +42,7 @@ jobs:
         run: npx lix download
       - name: Install Haxelib
         run: |
-          npx haxelib setup D:/haxelib
+          npx haxelib setup C:/haxelib
           lix install haxelib:lime#8.0.0
           lix install haxelib:hxcpp#4.2.1
           lix install haxelib:flixel-ui#2.4.0
@@ -58,7 +58,7 @@ jobs:
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
       - name: Compile
-        run: npx haxelib run lime build windows
+        run: npx haxelib run lime build windows --app-version="4.0.0-${{ github.run_id}}"  -D officialBuild
       - name: Publish Artifact
         uses: actions/upload-artifact@v4.3.4
         with:
