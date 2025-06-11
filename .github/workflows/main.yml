@@ -32,9 +32,6 @@ jobs:
         run: npm i lix -g
       - name: Run lix
         run: npx lix download
-      # clean stdgo
-      - name: Create vendor
-        run: go mod vendor
       - name: Install Haxelib
         run: |
           haxelib setup C:/haxelib
