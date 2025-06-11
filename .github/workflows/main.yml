@@ -33,8 +33,6 @@ jobs:
       - name: Run lix
         run: npx lix download
       # clean stdgo
-      - name: Clean stdgo
-        run: npx haxe --run Run clean
       - name: Create vendor
         run: go mod vendor
       - name: Install Haxelib
