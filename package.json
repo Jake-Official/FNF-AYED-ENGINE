@@ -1,7 +1,7 @@
 {
-  "name": "haxe-flixel-template",
+  "name": "FNF-AYED-ENGINE",
   "version": "0.4.0",
-  "description": "HaxeFlixel game template powered by Lix and Nodejs. The fastest way to start building a HaxeFlixel game.",
+  "description": "",
   "main": "index.js",
   "type": "module",
   "engines": {
