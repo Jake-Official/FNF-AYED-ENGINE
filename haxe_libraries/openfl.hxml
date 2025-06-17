@@ -1,2 +1,2 @@
 -D openfl=9.2.1
--cp ${LD_LIBRARY_PATH}/openfl/9.2.1/haxelib/
+-cp ${HAXESHIM_LIBCACHE}/openfl/9.2.1/haxelib/

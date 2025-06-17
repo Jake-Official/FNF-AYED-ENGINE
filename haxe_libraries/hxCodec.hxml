@@ -1,2 +1,2 @@
 -D hxCodec=2.5.1
--cp ${LD_LIBRARY_PATH}/hxCodec/2.5.1/haxelib/
+-cp ${HAXESHIM_LIBCACHE}/hxCodec/2.5.1/haxelib/

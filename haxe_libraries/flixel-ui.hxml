@@ -1,2 +1,2 @@
 -D flixel-ui=2.4.0
--cp ${LD_LIBRARY_PATH}/flixel-ui/2.4.0/haxelib/
+-cp ${HAXESHIM_LIBCACHE}/flixel-ui/2.4.0/haxelib/
