@@ -1,4 +1,4 @@
--cp ${HAXE_LIBCACHE}/lime/8.0.0/haxelib/src
+-cp ${HAXE_LIBCACHE}/lime/8.0.0/
 -D lime=8.0.0
 --macro lime._internal.macros.DefineMacro.run()
--lib ndll:${HAXE_LIBCACHE}/lime/8.0.0/haxelib/ndll/
+-lib ndll:${HAXE_LIBCACHE}/lime/8.0.0/
