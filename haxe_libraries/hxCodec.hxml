@@ -1,2 +1,3 @@
+# @install: lix --silent download "haxelib:hxCodec#2.5.1" into hxCodec/2.5.1/haxelib
 -D hxCodec=2.5.1
 -cp ${HAXESHIM_LIBCACHE}/hxCodec/2.5.1/haxelib/

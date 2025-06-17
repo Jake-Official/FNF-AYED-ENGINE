@@ -1,2 +1,4 @@
+# @install: lix --silent download "haxelib:/openfl#9.2.1" into openfl/9.2.1/haxelib
+# @run: haxelib run-dir openfl ${HAXE_LIBCACHE}/openfl/9.2.1/haxelib
 -D openfl=9.2.1
 -cp ${HAXESHIM_LIBCACHE}/openfl/9.2.1/haxelib/

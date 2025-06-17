@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "engines": {
-    "node": ">=16"
+    "node": ">=16.0.0"
   },
   "scripts": {
     "build": "lix lime build windows -minify",
