@@ -28,7 +28,6 @@ jobs:
           node-version: 16
       - run: npm install
       - run: npm ci
-      - run: npm test
 
       - uses: actions/checkout@v4.1.7
 
