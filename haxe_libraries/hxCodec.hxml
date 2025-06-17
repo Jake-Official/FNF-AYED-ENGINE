@@ -1,0 +1,2 @@
+-D hxCodec=2.5.1
+-cp ${HAXE_LIBCACHE}/hxCodec/2.5.1/haxelib/
