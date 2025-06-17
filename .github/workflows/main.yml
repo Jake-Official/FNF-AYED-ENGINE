@@ -39,13 +39,11 @@ jobs:
         run: npm i
       - name: Run lix
         run: npx lix download
-      - name: Install Haxelib
-        run: |
-          haxelib setup C:/haxelib
-          haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
-          haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
-          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
-          haxelib list
+      - name: download all git clone
+        run: | 
+          git clone https://github.com/nebulazorua/linc_luajit
+          git clone https://github.com/ianharrigan/hscript-ex
+          git clone https://github.com/Aidan63/linc_discord-rpc
         shell: cmd
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
